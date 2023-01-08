@@ -1,5 +1,8 @@
-import axios from "axios";
+import axios from "../libs/axios";
 
 export async function loginRequest(email: string, password: string) {
-  return axios.post("http://localhost:3000/login", { email, password });
+  return axios.post("/login", { email, password });
+}
+export async function profileRequest() {
+  return await axios.get("/profile");
 }
