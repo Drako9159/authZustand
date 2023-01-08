@@ -18,5 +18,13 @@ export function loginHandler(req: Request, res: Response) {
   return res.json({ token: token });
 }
 export function profileHandler(req: Request, res: Response) {
-  return res.json({ message: "Hola perrin" });
+  req.user;
+
+  return res.json({
+    profile: {
+      username: req.user,
+      message: "profile data"
+    },
+
+  });
 }
