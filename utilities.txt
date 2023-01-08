@@ -1,1 +1,6 @@
 npm install express morgan jsonwebtoken cors
+
+npm install typescript @types/node @types/express @types/morgan @types/cors @types-jsonwebtoken ts-node-dev -D
+
+// para el compilador de typescript/crea un tsconfig
+npx tsc --init
